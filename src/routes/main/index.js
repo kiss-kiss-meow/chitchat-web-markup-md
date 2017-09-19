@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Grid from 'material-ui/Grid'
 import Home from 'routes/main/Home'
 import AboutUsRoute from 'routes/main/AboutUs'
@@ -15,10 +15,10 @@ const MainRoute = () => (
 
     {/* Routes */}
     <Grid item xs={12}>
-      <Route exact path="/" component={Home} />
-    </Grid>
-    <Grid item xs={12}>
-      <Route exact path="/about" component={AboutUsRoute} />
+      <Switch>
+        <Route path="/about" component={AboutUsRoute} />
+        <Route path="/" component={Home} />
+      </Switch>
     </Grid>
 
     {/* Footer */}
