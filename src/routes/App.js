@@ -12,12 +12,10 @@ const theme = createMuiTheme({
 const App = () => (
   <MuiThemeProvider theme={theme}>
     <Router>
-      <div>
-        <Switch>
-          <Route path="/auth" component={AuthRoute} />
-          <Route component={MainRoute} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/auth" component={AuthRoute} />
+        <Route component={MainRoute} />
+      </Switch>
     </Router>
   </MuiThemeProvider>
 )
