@@ -1,5 +1,6 @@
 export default ({ mainColorPalette, spacing }) => ({
-  content: {
+  root: {
+    height: '100%',
     backgroundColor: mainColorPalette[50],
     paddingTop: spacing.unit * 5
   },
