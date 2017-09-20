@@ -4,7 +4,7 @@ import Grid from 'material-ui/Grid'
 import styles from './styles'
 
 const AboutUs = ({ classes }) => (
-  <Grid container className={classes.content}>
+  <Grid container justify="center" className={classes.content}>
     <Grid item className={classes.image} xs={8}>
       <img
         src="https://a.slack-edge.com/52353/marketing/img/home/home_illo.png"

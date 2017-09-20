@@ -1,20 +1,19 @@
 export default ({ mainColorPalette, spacing }) => ({
   content: {
-    justifyContent: 'center',
     backgroundColor: mainColorPalette[50],
-    paddingTop: spacing.unit * 5,
-    paddingRight: '15%'
+    paddingTop: spacing.unit * 5
   },
   image: {
-    minWidth: '200px',
+    minWidth: '100px',
+    maxWidth: '400px',
+    objectFit: 'contain',
     '&>img': {
       maxWidth: '100%',
-      maxHeight: 'auto'
+      height: 'auto'
     }
   },
   info: {
     minWidth: '200px',
-    fontSize: '1.25rem',
     color: mainColorPalette[500]
   }
 })
