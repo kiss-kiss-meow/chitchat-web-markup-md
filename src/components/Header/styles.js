@@ -1,8 +1,4 @@
 export default ({ mainColorPalette: palette, spacing }) => ({
-  root: {
-    marginTop: spacing.unit,
-    width: '100%'
-  },
   flex: {
     flex: 1
   },
