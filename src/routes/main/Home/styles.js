@@ -1,20 +1,21 @@
 export default ({ mainColorPalette, spacing }) => ({
-  content: {
+  root: {
+    height: '100%',
     backgroundColor: mainColorPalette[50],
-    paddingTop: spacing.unit * 5,
-    paddingRight: '25%'
+    paddingTop: spacing.unit * 5
   },
-  images: {
-    minWidth: '200px',
+  infoItem: {
+    color: mainColorPalette[500],
+    padding: spacing.unit * 4
+  },
+  image: {
+    minWidth: '100px',
+    maxWidth: '400px',
+    objectFit: 'contain',
     '&>img': {
       maxWidth: '100%',
-      maxHeight: 'auto'
+      height: 'auto'
     }
-  },
-  info: {
-    minWidth: '200px',
-    fontSize: '2rem',
-    color: mainColorPalette[500]
   },
   btn: {
     color: mainColorPalette[50],
