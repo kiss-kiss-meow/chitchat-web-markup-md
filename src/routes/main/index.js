@@ -4,6 +4,7 @@ import Grid from 'material-ui/Grid'
 import { withStyles } from 'material-ui/styles'
 import Home from 'routes/main/Home'
 import AboutUsRoute from 'routes/main/AboutUs'
+import Messages from 'routes/main/Messages'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import styles from './styles'
@@ -25,6 +26,7 @@ const MainRoute = ({ classes }) => (
     <Grid item className={classes.content}>
       <Switch>
         <Route path="/about" component={AboutUsRoute} />
+        <Route path="/messages" component={Messages} />
         <Route path="/" component={Home} />
       </Switch>
     </Grid>
