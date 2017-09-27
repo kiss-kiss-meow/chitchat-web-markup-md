@@ -5,8 +5,8 @@ import SignIn from 'components/SignIn'
 
 const styles = theme => ({
   root: {
-    paddingTop: theme.spacing.unit * 8
-  }
+    paddingTop: theme.spacing.unit * 8,
+  },
 })
 
 const SignInRoute = ({ classes }) => (

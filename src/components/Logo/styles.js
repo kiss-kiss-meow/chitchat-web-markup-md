@@ -5,7 +5,7 @@ export default ({ spacing, breakpoints, transitions, palette }) => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 100,
-    width: '10%'
+    width: '10%',
   },
   buttonBase: {
     width: spacing.unit * 10,
@@ -13,14 +13,14 @@ export default ({ spacing, breakpoints, transitions, palette }) => ({
     position: 'relative',
     [breakpoints.down('sm')]: {
       width: '100% !important', // Overrides inline-style
-      height: 100
+      height: 100,
     },
     '&:hover': {
-      zIndex: 1
+      zIndex: 1,
     },
     '&:hover $imageBackdrop': {
-      opacity: 0.15
-    }
+      opacity: 0.15,
+    },
   },
   imageSrc: {
     height: 'auto',
@@ -31,7 +31,7 @@ export default ({ spacing, breakpoints, transitions, palette }) => ({
     bottom: 0,
     backgroundSize: 'cover',
     backgroundPosition: 'center 40%',
-    backgroundImage: `url(${logo})`
+    backgroundImage: `url(${logo})`,
   },
   imageBackdrop: {
     position: 'absolute',
@@ -41,9 +41,9 @@ export default ({ spacing, breakpoints, transitions, palette }) => ({
     bottom: 0,
     background: palette.common.black,
     opacity: 0.4,
-    transition: transitions.create('opacity')
+    transition: transitions.create('opacity'),
   },
   link: {
-    textDecoration: 'none'
-  }
+    textDecoration: 'none',
+  },
 })

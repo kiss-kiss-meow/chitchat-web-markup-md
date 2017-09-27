@@ -6,7 +6,7 @@ import AuthRoute from 'routes/auth'
 import MainRoute from 'routes/main'
 
 const theme = createMuiTheme({
-  mainColorPalette: deepPurple
+  mainColorPalette: deepPurple,
 })
 
 const App = () => (

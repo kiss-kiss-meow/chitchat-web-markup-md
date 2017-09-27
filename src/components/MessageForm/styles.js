@@ -1,13 +1,13 @@
 export default ({ mainColorPalette }) => ({
   root: {
-    padding: '5px'
+    padding: '5px',
   },
   textField: {
     '&:before': {
-      content: 'none'
+      content: 'none',
     },
     '&:after': {
-      backgroundColor: mainColorPalette[100]
-    }
-  }
+      backgroundColor: mainColorPalette[100],
+    },
+  },
 })
