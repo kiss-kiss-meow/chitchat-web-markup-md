@@ -1,7 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from 'routes/App'
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import { deepPurple } from 'material-ui/colors'
+import { BrowserRouter as Router } from 'react-router-dom'
 import registerServiceWorker from 'registerServiceWorker'
+import App from 'routes/App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const theme = createMuiTheme({
+  mainColorPalette: deepPurple,
+})
+
+ReactDOM.render(
+  <MuiThemeProvider theme={theme}>
+    <Router>
+      <App />
+    </Router>
+  </MuiThemeProvider>,
+  document.getElementById('root')
+)
+
 registerServiceWorker()
