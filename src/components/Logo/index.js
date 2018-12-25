@@ -1,7 +1,7 @@
 import React from 'react'
-import ButtonBase from 'material-ui/ButtonBase'
+import ButtonBase from '@material-ui/core/ButtonBase'
 import { NavLink } from 'react-router-dom'
-import { withStyles } from 'material-ui/styles'
+import { withStyles } from '@material-ui/core/styles'
 import styles from './styles.js'
 
 const Logo = ({ classes }) => (

@@ -1,7 +1,7 @@
 import React from 'react'
-import Grid from 'material-ui/Grid'
-import { withStyles } from 'material-ui/styles'
-import { GridList } from 'material-ui/GridList'
+import Grid from '@material-ui/core/Grid'
+import { withStyles } from '@material-ui/core/styles'
+import GridList from '@material-ui/core/GridList'
 import MessageHistoryItem from 'components/MessageHistoryItem'
 import styles from './styles'
 

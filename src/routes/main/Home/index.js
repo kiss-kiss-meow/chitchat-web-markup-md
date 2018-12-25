@@ -1,7 +1,7 @@
 import React from 'react'
-import Grid from 'material-ui/Grid'
-import { withStyles } from 'material-ui'
-import Button from 'material-ui/Button'
+import Grid from '@material-ui/core/Grid'
+import { withStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
 import styles from './styles'
 
 const Home = ({ classes }) => (

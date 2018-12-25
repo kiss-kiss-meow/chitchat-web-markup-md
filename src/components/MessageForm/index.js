@@ -1,7 +1,7 @@
 import React from 'react'
-import Grid from 'material-ui/Grid'
-import TextField from 'material-ui/TextField'
-import { withStyles } from 'material-ui/styles'
+import Grid from '@material-ui/core/Grid'
+import TextField from '@material-ui/core/TextField'
+import { withStyles } from '@material-ui/core/styles'
 import styles from './styles'
 
 const MessageForm = ({ classes }) => (
@@ -12,7 +12,7 @@ const MessageForm = ({ classes }) => (
         multiline
         fullWidth
         margin="normal"
-        InputClassName={classes.textField}
+        InputProps={{ className: classes.textField }}
       />
     </Grid>
   </Grid>

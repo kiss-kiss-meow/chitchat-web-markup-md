@@ -1,7 +1,7 @@
 import React from 'react'
-import { GridListTile } from 'material-ui/GridList'
-import { withStyles } from 'material-ui/styles'
-import Typography from 'material-ui/Typography'
+import GridListTile from '@material-ui/core/GridList'
+import { withStyles } from '@material-ui/core/styles'
+import Typography from '@material-ui/core/Typography'
 import styles from './styles'
 
 const genericClassNames = (base, additional) => (classes, message) => {

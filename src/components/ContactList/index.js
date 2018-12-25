@@ -1,7 +1,7 @@
 import React from 'react'
-import Grid from 'material-ui/Grid'
-import List from 'material-ui/List'
-import { withStyles } from 'material-ui/styles'
+import Grid from '@material-ui/core/Grid'
+import List from '@material-ui/core/List'
+import { withStyles } from '@material-ui/core/styles'
 import ContactListItem from 'components/ContactListItem'
 import styles from './styles'
 
